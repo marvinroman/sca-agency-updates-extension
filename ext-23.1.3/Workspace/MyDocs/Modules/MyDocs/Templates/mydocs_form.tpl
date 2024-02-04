@@ -3,8 +3,8 @@
   <fieldset>
     <small>Required <span class="mydocs-form-required">*</span></small>
     <div class="mydocs-form-control-group" data-validation="control-group">
-      <label for="file">
-        {{translate 'file'}}
+      <label for="type">
+        {{translate 'File Upload Type'}}
         <small class="mydocs-form-required">*</small>
       </label>
       <div data-validation="control">
@@ -17,12 +17,12 @@
     </div>
 
     <div class="mydocs-form-control-group" data-validation="control-group">
-      <label for="value">
-        {{translate 'Value'}}
+      <label for="file">
+        {{translate 'File'}}
         <small class="mydocs-form-required">*</small>
       </label>
       <div data-validation="control">
-        <input class="mydocs-form-input" type="text" name="value" id="value" value="{{model.value}}">
+        <input class="mydocs-form-input" type="file" name="file" id="file">
       </div>
     </div>
   </fieldset>
