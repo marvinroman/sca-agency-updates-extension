@@ -10,8 +10,8 @@ define('MyDocs.Entrypoint', [
 	return {
 		mountToApp: function mountToApp(container) {
 
-      const pageTypeComponent = container.getComponent('PageType');
-      const myAccountMenu = container.getComponent('MyAccountMenu');
+      var pageTypeComponent = container.getComponent('PageType');
+      var myAccountMenu = container.getComponent('MyAccountMenu');
 
       if (pageTypeComponent && myAccountMenu) {
 

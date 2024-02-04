@@ -6,8 +6,8 @@
     "type": "extension",
     "target": "SCA,SCS",
     "target_version": {
-        "SCA": ">=21.1",
-        "SCS": ">=21.1"
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
     },
     "description": "My Documents file viewer and uploader",
     "skins": [],
@@ -53,15 +53,15 @@
             "myaccount": {
                 "files": [
                     "Modules/MyDocs/JavaScript/MyDocs.Entrypoint.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Model.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.SelectOptions.Model.js",
+                    "Modules/MyDocs/JavaScript/MyDocs.List.View.js",
+                    "Modules/MyDocs/JavaScript/MyDocs.Upload.View.js",
                     "Modules/MyDocs/JavaScript/MyDocs.Collection.js",
                     "Modules/MyDocs/JavaScript/MyDocs.Collection.View.js",
                     "Modules/MyDocs/JavaScript/MyDocs.Details.View.js",
                     "Modules/MyDocs/JavaScript/MyDocs.Form.View.js",
+                    "Modules/MyDocs/JavaScript/MyDocs.Model.js",
                     "Modules/MyDocs/JavaScript/MyDocsHelper.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.List.View.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Upload.View.js"
+                    "Modules/MyDocs/JavaScript/MyDocs.SelectOptions.Model.js"
                 ]
             }
         }

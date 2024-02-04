@@ -32,7 +32,7 @@ define('MyDocs.Upload.View', [
 					return new MyDocsFormView({
 						model: this.model,
 					});
-				},
+				}
 			};
 
 			// if (!!Number(this.options.routerArguments[0])) {
@@ -73,9 +73,8 @@ define('MyDocs.Upload.View', [
 		},
 
 		getContext: function getContext() {
-			return {
-				// isNew: this.model.isNew(),
-			};
-		},
+			return {};
+		}
+    
 	});
 });

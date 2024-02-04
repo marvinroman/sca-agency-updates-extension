@@ -1,4 +1,4 @@
-define('MyDocs.Helper', ['MyDocs.SelectOptions.Model'], function (MyDocsSelectOptions) {
+define('MyDocs.Helper', ['Utils'], function (Utils) {
 
 	'use strict';
 
@@ -8,11 +8,11 @@ define('MyDocs.Helper', ['MyDocs.SelectOptions.Model'], function (MyDocsSelectOp
 		getTypeOptions: function getTypeOptions() {
 
       if (!typeOptions.length) {
-        // typeOptions = [
-        //   { internalid: '1', name: Utils.translate('Color') },
-        //   { internalid: '2', name: Utils.translate('Size') },
-        // ];
-        typeOptions = new MyDocsSelectOptions();
+        typeOptions = [
+          { internalid: '1', name: Utils.translate('Color') },
+          { internalid: '2', name: Utils.translate('Size') },
+        ];
+        // typeOptions = new MyDocsSelectOptions();
       }
 
 			return typeOptions;

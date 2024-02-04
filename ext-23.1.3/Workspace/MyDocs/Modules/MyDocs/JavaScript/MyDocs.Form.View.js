@@ -68,7 +68,6 @@ define('MyDocs.Form.View', [
 
 	MyDocsFormView.prototype.getContext = function () {
 		return {
-			isNew: this.formModel.isNew(),
 			model: this.formModel,
 			typeOptions: MyDocsHelper.getTypeOptions(),
 		};
