@@ -1,0 +1,1 @@
+<div data-view="MyDocs.Form.View"></div>
