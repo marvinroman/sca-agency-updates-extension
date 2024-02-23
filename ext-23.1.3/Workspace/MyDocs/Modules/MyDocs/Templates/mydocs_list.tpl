@@ -1,19 +1,19 @@
-<section class="mydocs-list">
-  <header class="mydocs-list-header">
-    <h2 class="mydocs-list-title">{{translate 'My Documents'}}</h2>
-    <a class="mydocs-list-button-new" href="my-documents/upload" data-toggle="show-in-modal">{{translate 'Upload a Document'}}</a>
+<section class="compliancedocuments-list">
+  <header class="compliancedocuments-list-header">
+    <h2 class="compliancedocuments-list-title">{{translate 'My Documents'}}</h2>
+    <a class="compliancedocuments-list-button-new" href="compliance-documents/upload" data-toggle="show-in-modal">{{translate 'Upload a Document'}}</a>
   </header>
-  <table class="mydocs-list-table">
-    <thead class="mydocs-list-table-header">
-        <tr class="mydocs-list-table-row">
-            <th class="mydocs-list-table-header-title">{{translate 'Document Name'}}</th>
-            <th class="mydocs-list-table-header-document-date">{{translate 'Document Type'}}</th>
-            <th class="mydocs-list-table-header-document-date">{{translate 'Document Date'}}</th>
-            <th class="mydocs-list-table-header-expiration-date">{{translate 'Expiration Date'}}</th>
-            <!-- <th class="mydocs-list-table-header-delete">{{translate 'Delete'}}</th> -->
+  <table class="compliancedocuments-list-table">
+    <thead class="compliancedocuments-list-table-header">
+        <tr class="compliancedocuments-list-table-row">
+            <th class="compliancedocuments-list-table-header-title">{{translate 'Document Name'}}</th>
+            <th class="compliancedocuments-list-table-header-document-date">{{translate 'Document Type'}}</th>
+            <th class="compliancedocuments-list-table-header-document-date">{{translate 'Document Date'}}</th>
+            <th class="compliancedocuments-list-table-header-expiration-date">{{translate 'Expiration Date'}}</th>
+            <!-- <th class="compliancedocuments-list-table-header-delete">{{translate 'Delete'}}</th> -->
         </tr>
     </thead>
-    <tbody data-view="MyDocs.Collection.View"></tbody>
+    <tbody data-view="ComplianceDocuments.Collection.View"></tbody>
   </table>
 </section>
 

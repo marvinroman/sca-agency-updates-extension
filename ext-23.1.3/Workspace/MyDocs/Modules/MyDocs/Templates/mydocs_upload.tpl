@@ -1,1 +1,1 @@
-<div data-view="MyDocs.Form.View"></div>
+<div data-view="ComplianceDocuments.Form.View"></div>

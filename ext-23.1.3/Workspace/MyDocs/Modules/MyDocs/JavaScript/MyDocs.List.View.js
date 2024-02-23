@@ -1,7 +1,7 @@
-define('MyDocs.List.View', [
+define('ComplianceDocuments.List.View', [
 	'PageType.Base.View',
-	'MyDocs.Collection',
-	'MyDocs.Collection.View',
+	'ComplianceDocuments.Collection',
+	'ComplianceDocuments.Collection.View',
 	'mydocs_list.tpl',
 	'Utils',
 ], function (
@@ -29,7 +29,7 @@ define('MyDocs.List.View', [
 				return [
 					{
 						text: Utils.translate('My Documents'),
-						href: '/my-documents',
+						href: '/compliance-documents',
 					},
 				];
 			};
@@ -37,7 +37,7 @@ define('MyDocs.List.View', [
 			this.title = Utils.translate('My Documents');
 
 			this.childViews = {
-				'MyDocs.Collection.View': function () {
+				'ComplianceDocuments.Collection.View': function () {
 					return new MyDocsCollectionView({
 						collection: this.collection,
 					});

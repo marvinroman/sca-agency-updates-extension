@@ -1,14 +1,14 @@
 <div class="alert-placeholder" data-type="alert-placeholder"></div>
-<form class="mydocs-form">
+<form class="compliancedocuments-form">
   <fieldset>
-    <small>Required <span class="mydocs-form-required">*</span></small>
-    <div class="mydocs-form-control-group" data-validation="control-group">
+    <small>Required <span class="compliancedocuments-form-required">*</span></small>
+    <div class="compliancedocuments-form-control-group" data-validation="control-group">
       <label for="type">
         {{translate 'File Upload Type'}}
-        <small class="mydocs-form-required">*</small>
+        <small class="compliancedocuments-form-required">*</small>
       </label>
       <div data-validation="control">
-        <select class="mydocs-form-select" name="type" id="type">
+        <select class="compliancedocuments-form-select" name="type" id="type">
           {{#each typeOptions}}
           <option value="{{internalid}}" {{#ifEquals internalid ../model.type}}selected{{/ifEquals}}>{{name}}</option>
           {{/each}}
@@ -16,17 +16,17 @@
       </div>
     </div>
 
-    <div class="mydocs-form-control-group" data-validation="control-group">
+    <div class="compliancedocuments-form-control-group" data-validation="control-group">
       <label for="file">
         {{translate 'File'}}
-        <small class="mydocs-form-required">*</small>
+        <small class="compliancedocuments-form-required">*</small>
       </label>
       <div data-validation="control">
-        <input class="mydocs-form-input" type="file" name="file" id="file">
+        <input class="compliancedocuments-form-input" type="file" name="file" id="file">
       </div>
     </div>
   </fieldset>
-  <div class="mydocs-form-control-group">
-    <button class="mydocs-form-submit" type="submit">{{translate 'Upload'}}</button>
+  <div class="compliancedocuments-form-control-group">
+    <button class="compliancedocuments-form-submit" type="submit">{{translate 'Upload'}}</button>
   </div>
 </form>

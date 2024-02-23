@@ -26,21 +26,21 @@
     },
     "sass": {
         "entry_points": {
-            "myaccount": "Modules/ComplianceDocuments/Sass/_mydocs.scss"
+            "myaccount": "Modules/ComplianceDocuments/Sass/_complaincedocuments.scss"
         },
         "files": [
-            "Modules/ComplianceDocuments/Sass/_mydocs.scss"
+            "Modules/ComplianceDocuments/Sass/_complaincedocuments.scss"
         ]
     },
     "templates": {
         "application": {
             "myaccount": {
                 "files": [
-                    "Modules/ComplianceDocuments/Templates/mydocs_collection.tpl",
-                    "Modules/ComplianceDocuments/Templates/mydocs_details.tpl",
-                    "Modules/ComplianceDocuments/Templates/mydocs_form.tpl",
-                    "Modules/ComplianceDocuments/Templates/mydocs_list.tpl",
-                    "Modules/ComplianceDocuments/Templates/mydocs_upload.tpl"
+                    "Modules/ComplianceDocuments/Templates/compliancedocumentscollection.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocumentsdetails.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocumentsform.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocumentslist.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocumentsupload.tpl"
                 ]
             }
         }

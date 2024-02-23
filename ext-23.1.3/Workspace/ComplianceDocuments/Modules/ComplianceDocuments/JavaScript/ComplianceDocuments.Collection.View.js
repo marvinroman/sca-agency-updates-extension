@@ -1,12 +1,12 @@
 define('ComplianceDocuments.Collection.View', [
 	'SCCollectionView',
 	'ComplianceDocuments.Details.View',
-	'mydocs_collection.tpl',
+	'compliancedocumentscollection.tpl',
 	'jQuery',
 ], function (
 	SCCollectionViewModule,
 	MyDocsDetailsView,
-	mydocs_collection_tpl,
+	compliancedocumentscollection_tpl,
 	jQuery
 ) {
 	'use strict';
@@ -17,7 +17,7 @@ define('ComplianceDocuments.Collection.View', [
 		SCCollectionView.call(this, options.collection);
 
 		this.collection = options.collection;
-		this.template = mydocs_collection_tpl;
+		this.template = compliancedocumentscollection_tpl;
 
 		var self = this;
 		this.collection.on('reset sync add remove change destroy', function () {

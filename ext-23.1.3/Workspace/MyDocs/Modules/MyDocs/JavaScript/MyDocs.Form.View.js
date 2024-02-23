@@ -1,7 +1,7 @@
-define('MyDocs.Form.View', [
+define('ComplianceDocuments.Form.View', [
 	'Backbone',
 	'SCFormView',
-	'MyDocs.Helper',
+	'ComplianceDocuments.Helper',
 	'Utils',
 	'mydocs_form.tpl',
 ], function (
@@ -19,7 +19,7 @@ define('MyDocs.Form.View', [
 		SCFormView.call(this, options.model);
 
 		this.formModel.on('sync', function () {
-			Backbone.history.navigate('my-documents', { trigger: true });
+			Backbone.history.navigate('compliance-documents', { trigger: true });
 		});
 
 		this.template = mydocs_form_tpl;

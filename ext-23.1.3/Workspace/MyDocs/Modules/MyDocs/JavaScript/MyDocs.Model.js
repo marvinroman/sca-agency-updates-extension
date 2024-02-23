@@ -1,7 +1,7 @@
-define('MyDocs.Model', [
+define('ComplianceDocuments.Model', [
 	'SCModel',
 	'Utils',
-	'MyDocs.Helper',
+	'ComplianceDocuments.Helper',
 ], function (SCModelModule, Utils, MyDocsHelper) {
 	'use strict';
 
@@ -13,7 +13,7 @@ define('MyDocs.Model', [
 		this.urlRoot = function urlRoot() {
 			return Utils.getAbsoluteUrl(
 				getExtensionAssetsPath(
-					'Modules/MyDocs/SuiteScript2/MyDocs.Service.ss'
+					'Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Service.ss'
 				),
 				true
 			);

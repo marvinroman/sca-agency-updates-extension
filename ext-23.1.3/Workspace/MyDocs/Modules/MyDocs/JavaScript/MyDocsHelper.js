@@ -1,4 +1,4 @@
-define('MyDocs.Helper', ['Utils'], function (Utils) {
+define('ComplianceDocuments.Helper', ['Utils'], function (Utils) {
 
 	'use strict';
 

@@ -1,7 +1,7 @@
 {
     "type": "object",
     "properties": { 
-        "MyDocs.config": {
+        "ComplianceDocuments.config": {
             "group": "extensions",
             "subtab": "MyDocs_subtab",
             "type": "string",

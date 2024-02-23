@@ -2,28 +2,28 @@ define('ComplianceDocuments.Upload.View', [
 	'PageType.Base.View',
 	'ComplianceDocuments.Form.View',
 	'ComplianceDocuments.Model',
-	'mydocs_upload.tpl',
+	'compliancedocumentsupload.tpl',
 	'jQuery',
 	'Utils',
 ], function (
 	PageTypeBaseView,
 	MyDocsFormView,
 	MyDocsModel,
-	mydocs_upload_tpl,
+	compliancedocumentsupload_tpl,
 	jQuery,
 	Utils
 ) {
 	'use strict';
 
 	return PageTypeBaseView.PageTypeBaseView.extend({
-		template: mydocs_upload_tpl,
+		template: compliancedocumentsupload_tpl,
 
 		initialize: function initialize() {
 			this.model = new MyDocsModel();
 		},
 
 		getSelectedMenu: function getSelectedMenu() {
-			return 'mydocumentslist';
+			return 'compliancedocumentslist';
 		},
 
 		beforeShowContent: function beforeShowContent() {

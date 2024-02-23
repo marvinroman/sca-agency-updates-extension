@@ -1,7 +1,7 @@
-define('MyDocs.Details.View', [
+define('ComplianceDocuments.Details.View', [
 	'SCView',
-	'MyDocs.Upload.View',
-	'MyDocs.Helper',
+	'ComplianceDocuments.Upload.View',
+	'ComplianceDocuments.Helper',
 	'mydocs_details.tpl',
 ], function (
 	SCViewModule,

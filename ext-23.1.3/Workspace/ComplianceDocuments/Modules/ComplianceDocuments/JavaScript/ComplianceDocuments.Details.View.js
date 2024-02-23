@@ -2,12 +2,12 @@ define('ComplianceDocuments.Details.View', [
 	'SCView',
 	'ComplianceDocuments.Upload.View',
 	'ComplianceDocuments.Helper',
-	'mydocs_details.tpl',
+	'compliancedocumentsdetails.tpl',
 ], function (
 	SCViewModule,
 	MyDocsUploadView,
 	MyDocsHelper,
-	mydocs_details_tpl
+	compliancedocumentsdetails_tpl
 ) {
 	'use strict';
 
@@ -18,7 +18,7 @@ define('ComplianceDocuments.Details.View', [
 		SCView.call(this, options);
 
 		this.model = options.model;
-		this.template = mydocs_details_tpl;
+		this.template = compliancedocumentsdetails_tpl;
 	}
 
 	MyDocsDetailsView.prototype = Object.create(SCView.prototype);

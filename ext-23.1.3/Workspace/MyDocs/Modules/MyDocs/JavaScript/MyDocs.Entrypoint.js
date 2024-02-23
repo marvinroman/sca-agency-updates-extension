@@ -1,6 +1,6 @@
-define('MyDocs.Entrypoint', [
-  'MyDocs.List.View',
-  'MyDocs.Upload.View'
+define('ComplianceDocuments.Entrypoint', [
+  'ComplianceDocuments.List.View',
+  'ComplianceDocuments.Upload.View'
 ], function (
   MyDocsListView,
   MyDocsUploadView
@@ -18,7 +18,7 @@ define('MyDocs.Entrypoint', [
         // register the My Documents listing page
         pageTypeComponent.registerPageType({
           name: 'MyDocumentsList',
-          routes: ['my-documents'],
+          routes: ['compliance-documents'],
           view: MyDocsListView,
           defaultTemplate: {
             name: 'mydocs_list.tpl',
@@ -29,7 +29,7 @@ define('MyDocs.Entrypoint', [
         // register the My Documents upload page
         pageTypeComponent.registerPageType({
           name: 'MyDocumentsUpload',
-          routes: ['my-documents/upload'],
+          routes: ['compliance-documents/upload'],
           view: MyDocsUploadView,
           defaultTemplate: {
             name: 'mydocs_upload.tpl',
@@ -42,7 +42,7 @@ define('MyDocs.Entrypoint', [
           id: 'mydocumentslist',
           name: 'My Documents',
           index: 99,
-          url: 'my-documents'
+          url: 'compliance-documents'
         });
       }
 

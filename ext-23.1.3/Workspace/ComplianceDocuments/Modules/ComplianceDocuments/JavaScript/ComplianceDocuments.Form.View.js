@@ -3,13 +3,13 @@ define('ComplianceDocuments.Form.View', [
 	'SCFormView',
 	'ComplianceDocuments.Helper',
 	'Utils',
-	'mydocs_form.tpl',
+	'compliancedocumentsform.tpl',
 ], function (
 	Backbone,
 	SCFormViewModule,
 	MyDocsHelper,
 	Utils,
-	mydocs_form_tpl
+	compliancedocumentsform_tpl
 ) {
 	'use strict';
 
@@ -22,7 +22,7 @@ define('ComplianceDocuments.Form.View', [
 			Backbone.history.navigate('compliance-documents', { trigger: true });
 		});
 
-		this.template = mydocs_form_tpl;
+		this.template = compliancedocumentsform_tpl;
 	}
 
 	MyDocsFormView.prototype = Object.create(SCFormView.prototype);

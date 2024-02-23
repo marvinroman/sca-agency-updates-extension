@@ -1,7 +1,7 @@
-define('MyDocs.Upload.View', [
+define('ComplianceDocuments.Upload.View', [
 	'PageType.Base.View',
-	'MyDocs.Form.View',
-	'MyDocs.Model',
+	'ComplianceDocuments.Form.View',
+	'ComplianceDocuments.Model',
 	'mydocs_upload.tpl',
 	'jQuery',
 	'Utils',
@@ -28,7 +28,7 @@ define('MyDocs.Upload.View', [
 
 		beforeShowContent: function beforeShowContent() {
 			this.childViews = {
-				'MyDocs.Form.View': function () {
+				'ComplianceDocuments.Form.View': function () {
 					return new MyDocsFormView({
 						model: this.model,
 					});
@@ -40,7 +40,7 @@ define('MyDocs.Upload.View', [
 			// 		return [
 			// 			{
 			// 				text: Utils.translate('My Documents'),
-			// 				href: '/my-documents',
+			// 				href: '/compliance-documents',
 			// 			},
 			// 			{
 			// 				text: 'Edit',
@@ -58,7 +58,7 @@ define('MyDocs.Upload.View', [
 					return [
 						{
 							text: Utils.translate('My Documents'),
-							href: '/my-documents',
+							href: '/compliance-documents',
 						},
 						{
 							text: 'Upload',

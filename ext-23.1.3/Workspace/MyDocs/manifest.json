@@ -1,5 +1,5 @@
 {
-    "name": "MyDocs",
+    "name": "ComplianceDocuments",
     "fantasyName": "My Documents",
     "vendor": "SCSCloud",
     "version": "1.0.0",
@@ -21,57 +21,57 @@
     },
     "configuration": {
         "files": [
-            "Modules/MyDocs/Configuration/MyDocs.json"
+            "Modules/ComplianceDocuments/Configuration/ComplianceDocuments.json"
         ]
     },
     "sass": {
         "entry_points": {
-            "myaccount": "Modules/MyDocs/Sass/_mydocs.scss"
+            "myaccount": "Modules/ComplianceDocuments/Sass/_mydocs.scss"
         },
         "files": [
-            "Modules/MyDocs/Sass/_mydocs.scss"
+            "Modules/ComplianceDocuments/Sass/_mydocs.scss"
         ]
     },
     "templates": {
         "application": {
             "myaccount": {
                 "files": [
-                    "Modules/MyDocs/Templates/mydocs_collection.tpl",
-                    "Modules/MyDocs/Templates/mydocs_details.tpl",
-                    "Modules/MyDocs/Templates/mydocs_form.tpl",
-                    "Modules/MyDocs/Templates/mydocs_list.tpl",
-                    "Modules/MyDocs/Templates/mydocs_upload.tpl"
+                    "Modules/ComplianceDocuments/Templates/mydocs_collection.tpl",
+                    "Modules/ComplianceDocuments/Templates/mydocs_details.tpl",
+                    "Modules/ComplianceDocuments/Templates/mydocs_form.tpl",
+                    "Modules/ComplianceDocuments/Templates/mydocs_list.tpl",
+                    "Modules/ComplianceDocuments/Templates/mydocs_upload.tpl"
                 ]
             }
         }
     },
     "javascript": {
         "entry_points": {
-            "myaccount": "Modules/MyDocs/JavaScript/MyDocs.Entrypoint.js"
+            "myaccount": "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Entrypoint.js"
         },
         "application": {
             "myaccount": {
                 "files": [
-                    "Modules/MyDocs/JavaScript/MyDocs.Entrypoint.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.List.View.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Upload.View.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Collection.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Collection.View.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Details.View.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Form.View.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.Model.js",
-                    "Modules/MyDocs/JavaScript/MyDocsHelper.js",
-                    "Modules/MyDocs/JavaScript/MyDocs.SelectOptions.Model.js"
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Entrypoint.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.List.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Upload.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Collection.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Collection.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Details.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Form.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Model.js",
+                    "Modules/ComplianceDocuments/JavaScript/MyDocsHelper.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.SelectOptions.Model.js"
                 ]
             }
         }
     },
-    "local_folder": "Workspace/MyDocs",
+    "local_folder": "Workspace/ComplianceDocuments",
     "suitescript2": {
         "files": [
-            "Modules/MyDocs/SuiteScript2/MyDocs.Service.ss",
-            "Modules/MyDocs/SuiteScript2/MyDocs.SelectOptions.Service.ss",
-            "Modules/MyDocs/SuiteScript2/MyDocs.Backend.Model.js"
+            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Service.ss",
+            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.SelectOptions.Service.ss",
+            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Backend.Model.js"
         ]
     }
 }

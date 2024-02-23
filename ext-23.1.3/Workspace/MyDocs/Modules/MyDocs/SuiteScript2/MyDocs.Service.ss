@@ -2,7 +2,7 @@
  * @NApiVersion 2.x
  * @NModuleScope Public
  */
-define(['./MyDocs.Backend.Model', 'N/runtime'], function (
+define(['./ComplianceDocuments.Backend.Model', 'N/runtime'], function (
 	MyDocsBackendModel,
 	runtime
 ) {

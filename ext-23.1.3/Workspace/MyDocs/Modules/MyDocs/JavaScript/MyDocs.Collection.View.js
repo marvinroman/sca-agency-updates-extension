@@ -1,6 +1,6 @@
-define('MyDocs.Collection.View', [
+define('ComplianceDocuments.Collection.View', [
 	'SCCollectionView',
-	'MyDocs.Details.View',
+	'ComplianceDocuments.Details.View',
 	'mydocs_collection.tpl',
 	'jQuery',
 ], function (

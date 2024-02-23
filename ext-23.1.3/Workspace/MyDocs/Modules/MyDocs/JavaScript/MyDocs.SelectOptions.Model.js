@@ -1,4 +1,4 @@
-define('MyDocs.SelectOptions.Model', [
+define('ComplianceDocuments.SelectOptions.Model', [
 	'SCModel',
 	'Utils'
 ], function (SCModelModule, Utils) {
@@ -12,7 +12,7 @@ define('MyDocs.SelectOptions.Model', [
 		this.urlRoot = function urlRoot() {
 			return Utils.getAbsoluteUrl(
 				getExtensionAssetsPath(
-					'Modules/MyDocs/SuiteScript2/MyDocs.SelectOptions.Service.ss'
+					'Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.SelectOptions.Service.ss'
 				),
 				true
 			);

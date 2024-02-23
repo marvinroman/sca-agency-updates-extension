@@ -1,6 +1,6 @@
-define('MyDocs.Collection', [
+define('ComplianceDocuments.Collection', [
 	'SCCollection',
-	'MyDocs.Model',
+	'ComplianceDocuments.Model',
 	'Utils',
 ], function (SCCollectionModule, MyDocsModel, Utils) {
 	'use strict';
@@ -14,7 +14,7 @@ define('MyDocs.Collection', [
 		this.url = function () {
 			return Utils.getAbsoluteUrl(
 				getExtensionAssetsPath(
-					'Modules/MyDocs/SuiteScript2/MyDocs.Service.ss'
+					'Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Service.ss'
 				),
 				true
 			);

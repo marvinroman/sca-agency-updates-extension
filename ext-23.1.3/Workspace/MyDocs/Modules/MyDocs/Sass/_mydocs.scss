@@ -7,11 +7,11 @@
 	@import "../../<other module>/Sass/other-sass-file.scss";
 */ 
 
-.mydocs-info-card {
+.compliancedocuments-info-card {
     @extend .info-card;
 }
 
-.mydocs-info-card-content {
+.compliancedocuments-info-card-content {
     @extend .info-card-content;
     color: $sc-color-secondary;
     font-weight: bold;

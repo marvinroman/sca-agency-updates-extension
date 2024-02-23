@@ -21,7 +21,7 @@ define('ComplianceDocuments.Entrypoint', [
           routes: ['compliance-documents'],
           view: MyDocsListView,
           defaultTemplate: {
-            name: 'mydocs_list.tpl',
+            name: 'compliancedocumentslist.tpl',
             displayName: 'My Documents'
           },
         });
@@ -32,7 +32,7 @@ define('ComplianceDocuments.Entrypoint', [
           routes: ['compliance-documents/upload'],
           view: MyDocsUploadView,
           defaultTemplate: {
-            name: 'mydocs_upload.tpl',
+            name: 'compliancedocumentsupload.tpl',
             displayName: 'Upload a Document',
           },
         });

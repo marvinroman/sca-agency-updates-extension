@@ -2,26 +2,26 @@ define('ComplianceDocuments.List.View', [
 	'PageType.Base.View',
 	'ComplianceDocuments.Collection',
 	'ComplianceDocuments.Collection.View',
-	'mydocs_list.tpl',
+	'compliancedocumentslist.tpl',
 	'Utils',
 ], function (
 	PageTypeBaseView,
 	MyDocsCollection,
 	MyDocsCollectionView,
-	mydocs_list_tpl,
+	compliancedocumentslist_tpl,
 	Utils
 ) {
 	'use strict';
 
 	return PageTypeBaseView.PageTypeBaseView.extend({
-		template: mydocs_list_tpl,
+		template: compliancedocumentslist_tpl,
 
 		initialize: function initialize(options) {
 			this.collection = new MyDocsCollection();
 		},
 
 		getSelectedMenu: function getSelectedMenu() {
-			return 'mydocumentslist';
+			return 'compliancedocumentslist';
 		},
 
 		beforeShowContent: function beforeShowContent() {
