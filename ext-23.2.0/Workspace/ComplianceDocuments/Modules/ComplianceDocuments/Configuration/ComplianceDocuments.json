@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "ComplianceDocuments.config": {
+            "group": "extensions",
+            "subtab": "ComplianceDocuments_subtab",
+            "type": "string",
+            "title": "Compliance Documents Title",
+            "description": "Compliance Documents",
+            "default": "Default config example"
+        }
+    }
+}
