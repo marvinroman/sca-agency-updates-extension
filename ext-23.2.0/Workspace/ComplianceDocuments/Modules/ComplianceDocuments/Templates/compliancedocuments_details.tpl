@@ -1,7 +1,7 @@
 <tr class="compliancedocuments-list-table-row">
   <td>
-    <a href="{{model.file.url}}" target="_blank">
-      <span class="compliancedocuments-list-table-cell-label">{{model.file.name}}</span>
+    <a href="{{model.file.url}}" download>
+      <span class="compliancedocuments-list-table-cell-label compliancedocuments-document-link">{{model.file.name}}</span>
     </a>
   </td>
   <td><span class="compliancedocuments-list-table-cell-label">{{model.custrecord_cafb_sv_type}}</span></td>

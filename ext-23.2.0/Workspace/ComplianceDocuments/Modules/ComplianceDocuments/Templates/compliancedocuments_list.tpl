@@ -1,15 +1,17 @@
 <section class="compliancedocuments-list">
   <header class="compliancedocuments-list-header">
-    <h2 class="compliancedocuments-list-title">{{translate 'My Documents'}}</h2>
-    <a class="compliancedocuments-list-button-new" href="compliance-documents/upload" data-toggle="show-in-modal">{{translate 'Upload a Document'}}</a>
+    <h2 class="compliancedocuments-list-title">{{translate 'Compliance Documents'}}</h2>
+    <a href="compliance-documents/upload" data-toggle="show-in-modal">
+      <button class="compliancedocuments-list-button-new">{{translate 'Upload a Document'}}</button>
+    </a>
   </header>
   <table class="compliancedocuments-list-table">
     <thead class="compliancedocuments-list-table-header">
         <tr class="compliancedocuments-list-table-row">
             <th class="compliancedocuments-list-table-header-title">{{translate 'Document Name'}}</th>
             <th class="compliancedocuments-list-table-header-document-date">{{translate 'Document Type'}}</th>
-            <th class="compliancedocuments-list-table-header-document-date">{{translate 'Document Date'}}</th>
-            <th class="compliancedocuments-list-table-header-expiration-date">{{translate 'Expiration Date'}}</th>
+            <th class="compliancedocuments-list-table-header-document-date">{{translate 'Date'}}</th>
+            <th class="compliancedocuments-list-table-header-expiration-date">{{translate 'Expiration'}}</th>
             <!-- <th class="compliancedocuments-list-table-header-delete">{{translate 'Delete'}}</th> -->
         </tr>
     </thead>

@@ -1,8 +1,7 @@
 define('ComplianceDocuments.Model', [
 	'SCModel',
 	'Utils',
-	'ComplianceDocuments.Helper',
-], function (SCModelModule, Utils, MyDocsHelper) {
+], function (SCModelModule, Utils) {
 	'use strict';
 
 	var SCModel = SCModelModule.SCModel;

@@ -28,8 +28,6 @@ define('ComplianceDocuments.Upload.View', [
 
 		beforeShowContent: function beforeShowContent() {
 
-      // console.log('this.model', this.model)
-
 			this.childViews = {
 				'ComplianceDocuments.Form.View': function () {
 					return new ComplianceDocumentsFormView({
@@ -60,7 +58,7 @@ define('ComplianceDocuments.Upload.View', [
 				this.getBreadcrumbPages = function () {
 					return [
 						{
-							text: Utils.translate('My Documents'),
+							text: Utils.translate('Compliance Documents'),
 							href: '/compliance-documents',
 						},
 						{

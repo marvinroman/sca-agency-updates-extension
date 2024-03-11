@@ -60,8 +60,7 @@
                     "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Details.View.js",
                     "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Form.View.js",
                     "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Model.js",
-                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.SelectOptions.Model.js",
-                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocumentsHelper.js"
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.SelectOptions.Model.js"
                 ]
             }
         }

@@ -1,13 +1,11 @@
 define('ComplianceDocuments.Form.View', [
 	'Backbone',
 	'SCFormView',
-	'ComplianceDocuments.Helper',
 	'Utils',
 	'compliancedocuments_form.tpl',
 ], function (
 	Backbone,
 	SCFormViewModule,
-	MyDocsHelper,
 	Utils,
 	compliancedocuments_form_tpl
 ) {
@@ -29,13 +27,6 @@ define('ComplianceDocuments.Form.View', [
     for (let prop in options.model.attributes) {
       this.selectOptions.push(options.model.attributes[prop])
     }
-
-    // this.selectOptions = options.model.attributes.map( selectOption => {
-    //   return selectOption
-    // });
-
-    console.log('options', options)
-    console.log('this.selectOptions', this.selectOptions)
 
 	}
 

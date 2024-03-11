@@ -1,12 +1,8 @@
 define('ComplianceDocuments.Details.View', [
 	'SCView',
-	'ComplianceDocuments.Upload.View',
-	'ComplianceDocuments.Helper',
 	'compliancedocuments_details.tpl',
 ], function (
 	SCViewModule,
-	MyDocsUploadView,
-	MyDocsHelper,
 	compliancedocuments_details_tpl
 ) {
 	'use strict';
@@ -27,8 +23,7 @@ define('ComplianceDocuments.Details.View', [
 
 	MyDocsDetailsView.prototype.getContext = function () {
 		return {
-			model: this.model,
-			// typeOptions: MyDocsHelper.getTypeOptions(),
+			model: this.model
 		};
 	};
 
