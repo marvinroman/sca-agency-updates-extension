@@ -13,7 +13,7 @@ define('ComplianceDocuments.Form.View', [
 
 	var SCFormView = SCFormViewModule.SCFormView;
 
-	function MyDocsFormView(options) {
+	function ComplianceDocumentsFormView(options) {
 		SCFormView.call(this, options.model);
 
 		this.formModel.on('sync', function () {
@@ -24,24 +24,26 @@ define('ComplianceDocuments.Form.View', [
 
     this.selectOptions = [];
 
+    console.log('options', options)
+
     for (let prop in options.model.attributes) {
       this.selectOptions.push(options.model.attributes[prop])
     }
 
 	}
 
-	MyDocsFormView.prototype = Object.create(SCFormView.prototype);
+	ComplianceDocumentsFormView.prototype = Object.create(SCFormView.prototype);
 	
-  MyDocsFormView.prototype.constructor = MyDocsFormView;
+  ComplianceDocumentsFormView.prototype.constructor = ComplianceDocumentsFormView;
 
-	MyDocsFormView.prototype.getEvents = function () {
+	ComplianceDocumentsFormView.prototype.getEvents = function () {
 		return {
 			'submit form': 'saveForm',
 			'blur :input': 'onFormFieldChange',
 		};
 	};
 
-	MyDocsFormView.prototype.saveForm = function (e) {
+	ComplianceDocumentsFormView.prototype.saveForm = function (e) {
 		e.preventDefault();
 
 		var promise = SCFormView.prototype.saveForm.call(this, e);
@@ -49,7 +51,7 @@ define('ComplianceDocuments.Form.View', [
 		return promise;
 	};
 
-	MyDocsFormView.prototype.getFormFieldValue = function (input) {
+	ComplianceDocumentsFormView.prototype.getFormFieldValue = function (input) {
 		var field = {
 			name: input.attr('name'),
 			value: input.val(),
@@ -62,7 +64,7 @@ define('ComplianceDocuments.Form.View', [
 		return field;
 	};
 
-	MyDocsFormView.prototype.getFormValues = function (form) {
+	ComplianceDocumentsFormView.prototype.getFormValues = function (form) {
 		var formValues = form.serializeObject();
 
 		return {
@@ -71,12 +73,12 @@ define('ComplianceDocuments.Form.View', [
 		};
 	};
 
-	MyDocsFormView.prototype.getContext = function () {
+	ComplianceDocumentsFormView.prototype.getContext = function () {
 		return {
 			model: this.formModel,
 			typeOptions: this.selectOptions,
 		};
 	};
 
-	return MyDocsFormView;
+	return ComplianceDocumentsFormView;
 });

@@ -9,7 +9,7 @@ define('ComplianceDocuments.Details.View', [
 
 	var SCView = SCViewModule.SCView;
 
-	function MyDocsDetailsView(options) {
+	function ComplianceDocumentssDetailsView(options) {
 
 		SCView.call(this, options);
 
@@ -17,15 +17,15 @@ define('ComplianceDocuments.Details.View', [
 		this.template = compliancedocuments_details_tpl;
 	}
 
-	MyDocsDetailsView.prototype = Object.create(SCView.prototype);
-	MyDocsDetailsView.prototype.constructor = MyDocsDetailsView;
+	ComplianceDocumentssDetailsView.prototype = Object.create(SCView.prototype);
+	ComplianceDocumentssDetailsView.prototype.constructor = ComplianceDocumentssDetailsView;
 
 
-	MyDocsDetailsView.prototype.getContext = function () {
+	ComplianceDocumentssDetailsView.prototype.getContext = function () {
 		return {
 			model: this.model
 		};
 	};
 
-	return MyDocsDetailsView;
+	return ComplianceDocumentssDetailsView;
 });

@@ -1,4 +1,4 @@
-define('ComplianceDocuments.SelectOptions.Model', [
+define('ComplianceDocuments.Upload.Model', [
 	'SCModel',
 	'Utils'
 ], function (SCModelModule, Utils) {
@@ -6,24 +6,24 @@ define('ComplianceDocuments.SelectOptions.Model', [
 
 	var SCModel = SCModelModule.SCModel;
 
-	function MyDocsSelectOptions(model, options) {
+	function ComplianceDocumentsUploadModel(model, options) {
 		SCModel.call(this, model, options);
 
 		this.urlRoot = function urlRoot() {
 			return Utils.getAbsoluteUrl(
 				getExtensionAssetsPath(
-					'Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.SelectOptions.Service.ss'
+					'Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Upload.Service.ss'
 				),
 				true
 			);
 		};
 	}
 
-	MyDocsSelectOptions.prototype = Object.create(SCModel.prototype);
+	ComplianceDocumentsUploadModel.prototype = Object.create(SCModel.prototype);
 	
-  MyDocsSelectOptions.prototype.constructor = MyDocsSelectOptions;
+  ComplianceDocumentsUploadModel.prototype.constructor = ComplianceDocumentsUploadModel;
 
-	// MyDocsSelectOptions.prototype.getValidationRules = function () {
+	// ComplianceDocumentsUploadModel.prototype.getValidationRules = function () {
 	// 	return {
 	// 		type: [
 	// 			function (value, name) {
@@ -63,5 +63,5 @@ define('ComplianceDocuments.SelectOptions.Model', [
 	// 	};
 	// };
 
-	return MyDocsSelectOptions;
+	return ComplianceDocumentsUploadModel;
 });

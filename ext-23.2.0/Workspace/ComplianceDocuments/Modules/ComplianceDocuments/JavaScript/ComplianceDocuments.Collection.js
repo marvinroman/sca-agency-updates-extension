@@ -7,7 +7,7 @@ define('ComplianceDocuments.Collection', [
 
 	var SCCollection = SCCollectionModule.SCCollection;
 
-	function MyDocsCollection(models, options) {
+	function ComplianceDocumentsCollection(models, options) {
 		SCCollection.call(this, models, options);
 
 		this.model = ComplianceDocumentsModel;
@@ -21,9 +21,9 @@ define('ComplianceDocuments.Collection', [
 		};
 	}
 
-	MyDocsCollection.prototype = Object.create(SCCollection.prototype);
+	ComplianceDocumentsCollection.prototype = Object.create(SCCollection.prototype);
 	
-  MyDocsCollection.prototype.constructor = MyDocsCollection;
+  ComplianceDocumentsCollection.prototype.constructor = ComplianceDocumentsCollection;
 
-	return MyDocsCollection;
+	return ComplianceDocumentsCollection;
 });

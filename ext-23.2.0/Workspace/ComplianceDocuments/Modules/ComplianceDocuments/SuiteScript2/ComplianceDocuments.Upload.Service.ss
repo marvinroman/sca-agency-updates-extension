@@ -21,6 +21,10 @@ define(['./ComplianceDocuments.Backend.Model', 'N/runtime'], function (
 				case 'GET':
 					response = ComplianceDocumentsBackendModel.getSelectOptions(context.request);
 					break;
+
+				case 'POST':
+					response = ComplianceDocumentsBackendModel.uploadFile(context.request);
+					break;
 				default:
 					response = {
 						type: 'error',

@@ -2,8 +2,8 @@ define('ComplianceDocuments.Entrypoint', [
   'ComplianceDocuments.List.View',
   'ComplianceDocuments.Upload.View'
 ], function (
-  MyDocsListView,
-  MyDocsUploadView
+  ComplianceDocumentsListView,
+  ComplianceDocumentsUploadView
 ) {
 	'use strict';
 
@@ -19,7 +19,7 @@ define('ComplianceDocuments.Entrypoint', [
         pageTypeComponent.registerPageType({
           name: 'MyDocumentsList',
           routes: ['compliance-documents'],
-          view: MyDocsListView,
+          view: ComplianceDocumentsListView,
           defaultTemplate: {
             name: 'compliancedocuments_list.tpl',
             displayName: 'Compliance Documents'
@@ -30,7 +30,7 @@ define('ComplianceDocuments.Entrypoint', [
         pageTypeComponent.registerPageType({
           name: 'MyDocumentsUpload',
           routes: ['compliance-documents/upload'],
-          view: MyDocsUploadView,
+          view: ComplianceDocumentsUploadView,
           defaultTemplate: {
             name: 'compliancedocuments_upload.tpl',
             displayName: 'Upload a Document',

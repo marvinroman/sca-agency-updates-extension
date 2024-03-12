@@ -60,7 +60,7 @@
                     "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Details.View.js",
                     "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Form.View.js",
                     "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Model.js",
-                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.SelectOptions.Model.js"
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Upload.Model.js"
                 ]
             }
         }
@@ -69,7 +69,7 @@
     "suitescript2": {
         "files": [
             "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Service.ss",
-            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.SelectOptions.Service.ss",
+            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Upload.Service.ss",
             "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Backend.Model.js"
         ]
     }

@@ -13,7 +13,7 @@ define('ComplianceDocuments.Collection.View', [
 
 	var SCCollectionView = SCCollectionViewModule.SCCollectionView;
 
-	function MyDocsCollectionView(options) {
+	function ComplianceDocumentsCollectionView(options) {
 		SCCollectionView.call(this, options.collection);
 
 		this.collection = options.collection;
@@ -33,29 +33,29 @@ define('ComplianceDocuments.Collection.View', [
 		// };
 	}
 
-	MyDocsCollectionView.prototype = Object.create(SCCollectionView.prototype);
+	ComplianceDocumentsCollectionView.prototype = Object.create(SCCollectionView.prototype);
 	
-  MyDocsCollectionView.prototype.constructor = MyDocsCollectionView;
+  ComplianceDocumentsCollectionView.prototype.constructor = ComplianceDocumentsCollectionView;
 
-	MyDocsCollectionView.prototype.getCellViewsPerRow = function () {
+	ComplianceDocumentsCollectionView.prototype.getCellViewsPerRow = function () {
     return 1;
   };
 
-	MyDocsCollectionView.prototype.getCellViewInstance = function (model) {
+	ComplianceDocumentsCollectionView.prototype.getCellViewInstance = function (model) {
     return new MyDocsDetailsView({
       model: model,
     });
   };
 
-	// MyDocsCollectionView.prototype.getEvents = function () {
+	// ComplianceDocumentsCollectionView.prototype.getEvents = function () {
 	// 	return {
 	// 		'click button[data-action="delete"]': 'deleteFile',
 	// 	};
 	// };
 
-	MyDocsCollectionView.prototype.getContext = function () {
+	ComplianceDocumentsCollectionView.prototype.getContext = function () {
 		return {};
 	};
 
-	return MyDocsCollectionView;
+	return ComplianceDocumentsCollectionView;
 });

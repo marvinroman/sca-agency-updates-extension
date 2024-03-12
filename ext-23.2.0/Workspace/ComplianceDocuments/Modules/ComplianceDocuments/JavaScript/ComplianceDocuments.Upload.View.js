@@ -1,14 +1,14 @@
 define('ComplianceDocuments.Upload.View', [
 	'PageType.Base.View',
 	'ComplianceDocuments.Form.View',
-	'ComplianceDocuments.SelectOptions.Model',
+	'ComplianceDocuments.Upload.Model',
 	'compliancedocuments_upload.tpl',
 	'jQuery',
 	'Utils',
 ], function (
 	PageTypeBaseView,
 	ComplianceDocumentsFormView,
-	SelectOptionsModel,
+	UploadModel,
 	compliancedocuments_upload_tpl,
 	jQuery,
 	Utils
@@ -19,7 +19,7 @@ define('ComplianceDocuments.Upload.View', [
 		template: compliancedocuments_upload_tpl,
 
 		initialize: function initialize() {
-			this.model = new SelectOptionsModel();
+			this.model = new UploadModel();
 		},
 
 		getSelectedMenu: function getSelectedMenu() {

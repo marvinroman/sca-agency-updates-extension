@@ -134,6 +134,38 @@ define(['N/record', 'N/runtime', 'N/search'], function (
       return selectOptions;
 		},
 
+		uploadFile: function (request) {
+			var body = JSON.parse(request.body);
+      var user = runtime.getCurrentUser();
+
+      for (var prop in body) {
+        log.debug('uploadFile: body.' + prop, body[prop])
+      }
+
+      log.debug('uploadFile: user', user);
+
+			var userPreferences = record.create({
+				type: 'customrecord_user_preferences',
+			});
+
+			userPreferences.setValue({
+				fieldId: 'custrecord_user_preferences_owner',
+				value: runtime.getCurrentUser().id,
+			});
+
+			userPreferences.setValue({
+				fieldId: 'custrecord_user_preferences_type',
+				value: body.type,
+			});
+
+			userPreferences.setValue({
+				fieldId: 'custrecord_user_preferences_value',
+				value: body.value,
+			});
+
+			return userPreferences.save();
+		},
+
 		post: function (request) {
 			var body = JSON.parse(request.body);
 

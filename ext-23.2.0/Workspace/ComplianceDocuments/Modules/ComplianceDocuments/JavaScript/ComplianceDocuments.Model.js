@@ -6,7 +6,7 @@ define('ComplianceDocuments.Model', [
 
 	var SCModel = SCModelModule.SCModel;
 
-	function MyDocsModel(model, options) {
+	function ComplianceDocumentsModel(model, options) {
 		SCModel.call(this, model, options);
 
 		this.urlRoot = function urlRoot() {
@@ -19,11 +19,11 @@ define('ComplianceDocuments.Model', [
 		};
 	}
 
-	MyDocsModel.prototype = Object.create(SCModel.prototype);
+	ComplianceDocumentsModel.prototype = Object.create(SCModel.prototype);
 	
-  MyDocsModel.prototype.constructor = MyDocsModel;
+  ComplianceDocumentsModel.prototype.constructor = ComplianceDocumentsModel;
 
-	// MyDocsModel.prototype.getValidationRules = function () {
+	// ComplianceDocumentsModel.prototype.getValidationRules = function () {
 	// 	return {
 	// 		type: [
 	// 			function (value, name) {
@@ -63,5 +63,5 @@ define('ComplianceDocuments.Model', [
 	// 	};
 	// };
 
-	return MyDocsModel;
+	return ComplianceDocumentsModel;
 });
