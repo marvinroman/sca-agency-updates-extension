@@ -1,0 +1,76 @@
+{
+    "name": "ComplianceDocuments",
+    "fantasyName": "Compliance Documents",
+    "vendor": "SCSCloud",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": ">=21.1.0",
+        "SCS": ">=21.1.0"
+    },
+    "description": "Compliance Documents file viewer and uploader",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        }
+    },
+    "configuration": {
+        "files": [
+            "Modules/ComplianceDocuments/Configuration/ComplianceDocuments.json"
+        ]
+    },
+    "sass": {
+        "entry_points": {
+            "myaccount": "Modules/ComplianceDocuments/Sass/_compliancedocuments.scss"
+        },
+        "files": [
+            "Modules/ComplianceDocuments/Sass/_compliancedocuments.scss"
+        ]
+    },
+    "templates": {
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ComplianceDocuments/Templates/compliancedocuments_collection.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocuments_details.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocuments_form.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocuments_list.tpl",
+                    "Modules/ComplianceDocuments/Templates/compliancedocuments_upload.tpl"
+                ]
+            }
+        }
+    },
+    "javascript": {
+        "entry_points": {
+            "myaccount": "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Entrypoint.js"
+        },
+        "application": {
+            "myaccount": {
+                "files": [
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Entrypoint.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.List.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Upload.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Collection.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Collection.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Details.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Form.View.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Model.js",
+                    "Modules/ComplianceDocuments/JavaScript/ComplianceDocuments.Upload.Model.js"
+                ]
+            }
+        }
+    },
+    "local_folder": "Workspace/ComplianceDocuments",
+    "suitescript2": {
+        "files": [
+            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Service.ss",
+            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Upload.Service.ss",
+            "Modules/ComplianceDocuments/SuiteScript2/ComplianceDocuments.Backend.Model.js"
+        ]
+    }
+}

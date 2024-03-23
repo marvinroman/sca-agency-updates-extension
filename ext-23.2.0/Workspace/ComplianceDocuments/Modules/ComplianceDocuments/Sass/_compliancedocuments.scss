@@ -1,0 +1,40 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+.compliancedocuments-list-header {
+  @extend .product-list-lists-header;
+}
+
+.compliancedocuments-list-title {
+  @extend .product-list-lists-title;
+}
+
+.compliancedocuments-list-table-row {
+  @extend .product-list-list-details-wrapper;
+
+  th {
+    font-weight: 400;
+  }
+
+  th, td {
+    padding: 15px;
+  }
+
+  .compliancedocuments-document-link {
+    font-weight: 700;
+  }
+}
+
+.compliancedocuments-list-button-new,
+.compliancedocuments-form-submit {
+  @extend .product-list-lists-button-add;
+}
+
+// .compliancedocuments-list-table-cell-label {
+//   font-weight: 700;
+// }
